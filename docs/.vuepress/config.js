@@ -25,7 +25,7 @@ module.exports = {
       }
     ],
     sidebar: {
-      '/views/easy/': ['', '1', '2'],
+      '/views/easy/': ['1', '2'],
       '/views/medium/': ['', '1', '2'],
       '/views/hard/': ['', '1', '2'],
     }
