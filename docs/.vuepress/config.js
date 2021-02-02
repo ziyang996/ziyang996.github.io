@@ -3,6 +3,9 @@ module.exports = {
   description: '记录LeetCode的练习',
   themeConfig: {
     logo: 'https://www.vuepress.cn/hero.png',
+    head: [
+      ['link', { rel: 'icon', href: '/logo.png' }]
+    ],
     nav: [
       {
         text: '简单',
@@ -29,5 +32,14 @@ module.exports = {
       '/views/medium/': ['', '1', '2'],
       '/views/hard/': ['', '1', '2'],
     }
-  }
+  },
+  plugins: [
+    '@vuepress/back-to-top', 
+    ['@vuepress/active-header-links', 
+      {
+        sidebarLinkSelector: '.sidebar-link',
+        headerAnchorSelector: '.header-anchor'
+      }
+    ]
+  ]
 }
