@@ -1,11 +1,11 @@
 module.exports = {
   title: 'JavaScript LeetCode',
   description: '记录LeetCode的练习',
+  head: [
+    ['link', { rel: 'icon', href: '/logo.jpg' }]
+  ],
   themeConfig: {
     logo: 'https://www.vuepress.cn/hero.png',
-    head: [
-      ['link', { rel: 'icon', href: '/logo.png' }]
-    ],
     nav: [
       {
         text: '简单',
